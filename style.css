@@ -1,8 +1,9 @@
 body {
-    background: rgb(125,198,205);
+    background: rgb(125, 198, 205);
     color: rgb(45,45,45);
     padding: 10px;
     font-family: Arial, sans-serif;
+    border-color: rgb(112, 239, 0);
 }
 #all-content {
     max-width: 800px;

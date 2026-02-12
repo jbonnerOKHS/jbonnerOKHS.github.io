@@ -31,17 +31,17 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-  createPlatform(450,657,220,20,"black")
-  createPlatform(400,542,180,20,"black");
-  createPlatform(663,510,152,16,"black");
-  createPlatform(850,400,96,82,"black");
-  createPlatform(990,320,80,113,"black");
-  createPlatform(1130,215,78,30 "black")
-
+  createPlatform(450,657,220,20,"midnightblue")
+  createPlatform(400,542,180,20,"midnightblue");
+  createPlatform(663,510,152,16,"midnightblue");
+  createPlatform(850,400,96,82,"mdnightblue");
+  createPlatform(990,320,80,113,"midnightblue");
+  createPlatform(1130,215,110,57,"midnightblue")
 
 
     // TODO 3 - Create Collectables
-
+  createCollectable("diamond",387,452,0)
+  createCollectable("grace",700,277,)
 
 
     

@@ -398,7 +398,7 @@ function deathOfPlayer() {
   ctx.fillStyle = "Pink";
   ctx.font = "700% serif";
   ctx.fillText(
-    "i fear you died",
+    "I fear you died",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
@@ -674,15 +674,15 @@ function checkForWin() {
 
 function winGame() {
   // If we reach this point, all collectables are collected
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "grey";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
   );
-  ctx.fillStyle = "white";
-  ctx.font = "600% serif";
+  ctx.fillStyle = "deeppink";
+  ctx.font = "470% serif";
   ctx.fillText(
     "YOU GOT VICTORY!",
     canvas.width / 4,

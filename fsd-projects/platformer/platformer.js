@@ -44,13 +44,13 @@ $(function () {
     createCollectable("star", 387, 452, 0, 0.7);
     createCollectable("star", 700, 277, 1.3, 0.7);
     createCollectable("star", 1293, 97, 1.5, 0.7);
-    createCollectable("star",1350, 125, 0);
+    createCollectable("star", 1350, 125, 0);
     createCollectable("star", 200, 500, 1.9, 1.0);
     createCollectable("star", 200, 430, 1.9, 1.0);
    
 
     // TODO 4 - Create Cannons
-    createCannon("bottom", 705, 3000 );
+    createCannon("bottom", 705, 3000);
     createCannon("top", 1013,2075);
     createCannon("right", 482, 3050);
 

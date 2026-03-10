@@ -59,7 +59,7 @@
         // moves the Box to a new position on the screen along the X-Axis
         function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
-          //box.css("top", newPositionY);
+          box.css("top", newPositionY);
         }
 
         // changes the text displayed on the Box
@@ -81,6 +81,7 @@
           var randNum = Math.random() * 100;
           var colorStr = "rgb(50, 25, 250)";
           var randomNumberBetween0and10 = Math.random() * 10;
+          
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
@@ -116,6 +117,8 @@
           changeBoxText(points);
           points++; //Increases points by 1
           speed = (3 * points) + 10;
+          positionY = 0;
+          speedY = (3 * points) + 10;
         }
       })();
     </script>

@@ -43,7 +43,7 @@ var init = function (window) {
 
 
         // TODO 7 : Use a loop to create multiple circles
-       for (var i = 0; i <= 50; i++) {
+       for (var i = 0; i < 50; i++) {
         drawCircle();
        }
 
@@ -90,24 +90,27 @@ var init = function (window) {
         it to the opposite side of the screen.
         */
         game.checkCirclePosition = function(circle) {
-
+            var leftEdge = circle.x;
+            var rightEdge = circle.x + circle.radius;
+            var topEdge = circle.y;
+            var bottomEdge = circle.y + circle.radius;
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width ) {
+            if ( leftEdge > canvas.width ) {
                 circle.x = 0;
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            game.checkCirclePosition = function(circle) {
-                if (circle.x + circle.radius < 0) {
-                    circle.x = canvas.width + circle.radius;
-                }
-                if (circle.y + circle.radius < 0) {
-                    circle.y = canvas.height + circle.radius;
-                }
-                if (circle.y - circle.radius > canvas.height) {
-                    circle.y = 0 - circle.radius;
-                }
+            
+            else if (rightEdge < 0) {
+                 circle.x = canvas.width;
             }
+            if (bottomEdge < 0) {
+                circle.y = canvas.height;
+            }
+            else if (topEdge > canvas.height) {
+                circle.y = 0;
+            }
+            
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
